@@ -15,16 +15,16 @@ class Color extends React.Component {
     }
 
     modifyHex = (color) => {
-        if (color.length == 4) {
+        if (color.length === 4) {
             color = color.replace('#', '');
 
         }
 
-        if (color.length == 3) {
+        if (color.length === 3) {
             color = color[0] + color[0] + color[1] + color[1] + color[2] + color[2];
         }
 
-        if (color.length == 7) {
+        if (color.length === 7) {
             color = color.replace('#', '');
         }
 
@@ -32,7 +32,7 @@ class Color extends React.Component {
     }
 
     modifyToHex = (color) => {
-        if (color.length == 3 || color.length == 6) {
+        if (color.length === 3 || color.length === 6) {
             color = '#' + color;
         }
         return color;
@@ -40,7 +40,7 @@ class Color extends React.Component {
 
     hexToRGB = (color) => {
         let x = [];
-        if(color.length != 6) {
+        if(color.length !== 6) {
             color = this.modifyHex(color);
         }
         x.push(parseInt(color.slice(0,2), 16));
