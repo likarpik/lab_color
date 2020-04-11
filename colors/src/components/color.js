@@ -73,7 +73,7 @@ class Color extends React.Component {
                     <input type = "text" id="choose_color" name="choose_color" /> 
                     <button onClick = {this.changeColor}>Выбрать цвет</button>    
                 </p>
-                <div style = {{
+                <div class = "color_square" style = {{
                     height: 100,
                     width: 500,
                     marginLeft: 50,
@@ -82,7 +82,7 @@ class Color extends React.Component {
                     borderColor: 'black',
                     backgroundColor: this.state.color
                 }}/>
-                <div style = {{color: 'black'}}>{this.state.rgb}</div>  
+                <div class = "rgb_format" style = {{color: 'black'}}>{this.state.rgb}</div>  
             </div>
         );
     }
