@@ -3,9 +3,9 @@ import Form from './components/form';
 
 class App extends React.Component {
   render() {
-    return(
+    return (
       <div>
-        < Form />
+        <Form />
       </div>
     );
   }
