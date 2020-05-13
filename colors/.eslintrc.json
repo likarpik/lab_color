@@ -24,6 +24,12 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"]}]
-    }
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"]}],
+        "linebreak-style": 0,
+        "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
+        "no-param-reassign": 0,
+        "react/destructuring-assignment": [0, "never"],
+        "no-alert": 0
+    },
+    "parser": "babel-eslint"
 }
