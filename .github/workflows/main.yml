@@ -23,7 +23,14 @@ jobs:
         npm install
         npm run build --if-present
         npm run lint
-        npm run test
       working-directory: ./colors
+    
+    - name: Cypress run
+      uses: cypress-io/github-action@v1
+      with:
+        working-directory: ./colors
+        start: npm start
+        wait-on: http://localhost:3000
+        run: npm run test
       env:
         CI: true
