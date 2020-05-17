@@ -18,7 +18,7 @@ jobs:
     - name: Build and push
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: npm install && heroku container:push -a colors web
+      run: npm install && heroku container:push -a lab_color web
       working-directory: ./colors 
     
     - name: Release
