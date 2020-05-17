@@ -19,6 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack --mode=production",
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p",
     "eject": "react-scripts eject",
     "test": "cypress open",
     "lint": "eslint ./src/components/*.{js,jsx}"
@@ -49,6 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.4",
     "style-loader": "^1.1.3",
