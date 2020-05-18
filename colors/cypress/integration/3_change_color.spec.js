@@ -16,7 +16,7 @@ describe('Check the changing of color and interpretation in rgb', () => {
         const text = 'ff4500'
         cy.get('#choose_color').type(text).should('have.value', text)
         cy.get('button').click()
-        cy.get('.color_square').should('have.css', 'background-color').and('eq', 'rgb(255, 69, 0)')
+        cy.get('.color_square').should('have.css', 'background-color').and('eq', 'rgb(255, 70, 0)')
         cy.get('.rgb_format').should('not.be.empty')
     })
 
