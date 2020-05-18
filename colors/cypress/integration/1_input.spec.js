@@ -13,8 +13,8 @@ describe('Check the input form', () => {
      })
  
      it('Check input 2', () => {
-         const text = 'red'
-         cy.get('#choose_color').type(text).should('have.value', text)
+         const text = 'f234fa'
+         cy.get('#choose_color').type(text).should('be.empty')
          cy.get('button').click()
      })
  })
