@@ -19,7 +19,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node ./server.js",
     "build": "webpack --mode=production",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p",
