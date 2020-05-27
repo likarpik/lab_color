@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "node ./server.js",
-    "build": "webpack --mode=production",
+    "build": "react-scripts build",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p",
     "eject": "react-scripts eject",
